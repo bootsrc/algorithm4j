@@ -1,6 +1,4 @@
-package com.appjishu.algorithm4j;
-
-import com.appjishu.algorithm4j.model.Node;
+package com.appjishu.algorithm4j.binarytree;
 
 /**
  * 二叉树的先序遍历，中序遍历，后序遍历的递归实现
@@ -9,7 +7,7 @@ import com.appjishu.algorithm4j.model.Node;
  * 中序遍历： 跟在中间,  左->根 -> 右
  * 后序遍历:  根在最后,   左->右->根
  */
-public class BinaryTree {
+public class BinaryTreeTraversal {
     /**
      * @author yaobo
      * 二叉树的先序中序后序排序
@@ -63,7 +61,7 @@ public class BinaryTree {
     }
 
     public static void main(String[] args) {
-        BinaryTree tree = new BinaryTree();
+        BinaryTreeTraversal tree = new BinaryTreeTraversal();
         Node root = tree.init();
         System.out.println("先序遍历");
         tree.thePreTraversal(root);

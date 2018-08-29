@@ -1,4 +1,4 @@
-package com.appjishu.algorithm4j;
+package com.appjishu.algorithm4j.exam;
 
 /**
  * 3~100的所有素数

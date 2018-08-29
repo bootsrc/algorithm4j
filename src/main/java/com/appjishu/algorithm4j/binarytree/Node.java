@@ -1,4 +1,4 @@
-package com.appjishu.algorithm4j.model;
+package com.appjishu.algorithm4j.binarytree;
 
 /**
  * Referenced by
