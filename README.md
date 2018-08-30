@@ -1,5 +1,10 @@
 #algorithm4j
 
+用java实现的算法 
+Algorithm implemented by Java 
+
+<a href="http://appjishu.com">http://appjishu.com</a>
+
 package说明
 
 1.  <code>com.appjishu.algorithm4j.binarytree</code>    二叉树
