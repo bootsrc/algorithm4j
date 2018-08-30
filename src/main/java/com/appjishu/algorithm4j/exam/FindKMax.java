@@ -21,7 +21,10 @@ public class FindKMax {
             array[i] = key;
         }
         if (array.length - i < findK) {
-            return findKMaxInteger(array, low, i - 1, findK);
+            return findKMaxInteger(array, low, i - 1, findK - (array.length - i));
+            // 或者少使用一对小括号
+            // return findKMaxInteger(array, low, i - 1, findK + i - array.length);
+
         } else if (array.length - i > findK) {
             return findKMaxInteger(array, i + 1, high, findK);
         } else {
