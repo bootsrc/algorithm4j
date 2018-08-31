@@ -12,3 +12,7 @@ package说明
 3.  <code>com.appjishu.algorithm4j.exam</code>          算法题库
 
 后续不断完善中，算法是个长期的学习和复习过程
+
+所有的排序算法的介绍，参考网友的文章
+
+<a href="https://www.cnblogs.com/onepixel/articles/7674659.html">链接</a>
