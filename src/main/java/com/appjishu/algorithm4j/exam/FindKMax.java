@@ -2,6 +2,7 @@ package com.appjishu.algorithm4j.exam;
 
 /**
  * 快速排序的实现
+ * 寻找第K大的数
  */
 public class FindKMax {
 
