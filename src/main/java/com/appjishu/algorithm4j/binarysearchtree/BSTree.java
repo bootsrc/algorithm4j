@@ -1,5 +1,10 @@
 package com.appjishu.algorithm4j.binarysearchtree;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.List;
+
 public class BSTree<T extends Comparable<T>> {
 
     private BSTNode<T> mRoot;    // 根结点
@@ -189,5 +194,13 @@ public class BSTree<T extends Comparable<T>> {
         return iterativeSearch(mRoot, key);
     }
 
+    public static void main(String[] args){
+        List<Integer> list = new ArrayList<>();
+        list.add(3);
+        list.add(1);
+        list.add(9);
+        list.add(5);
+        Collections.sort(list);
 
+    }
 }
