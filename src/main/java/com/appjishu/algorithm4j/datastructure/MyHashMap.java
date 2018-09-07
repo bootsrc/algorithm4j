@@ -1,13 +1,14 @@
-package com.appjishu.algorithm4j.search;
+package com.appjishu.algorithm4j.datastructure;
 
 /**
+ * 基于HashTable 哈希表简历的HashMap
  * Hash 拉链法解决哈希冲突
  */
-public class MyMap {
+public class MyHashMap {
     Node[] nodes;
     int intsize;
 
-    private MyMap(int intsize) {
+    private MyHashMap(int intsize) {
         this.intsize = intsize;
         nodes = new Node[intsize];
     }
@@ -15,7 +16,7 @@ public class MyMap {
     /**
      * 初始化大小，需要优化
      */
-    public MyMap() {
+    public MyHashMap() {
         this(1024 * 1024);
     }
 
