@@ -20,7 +20,7 @@ public class QuickSortTest {
 		while (end > start) {
 			while(end > start && a[end] >= key) 
 				end--;
-			if (a[end] <= a[start]) {
+			if (a[end] <= key) {
 				int temp = a[start];
 				a[start] = a[end];
 				a[end] = temp;
@@ -28,7 +28,9 @@ public class QuickSortTest {
 			
 			while (end > start && a[start] <= key) 
 				start++;
-			
+			if (a[start] >= key) {
+
+			}
 		}
 	}
 }
