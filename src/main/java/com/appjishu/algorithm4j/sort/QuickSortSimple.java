@@ -25,27 +25,27 @@ public class QuickSortSimple {
         }
 
         //2, 初始化变量
-        int i= low;
+        int i = low;
         int j = high;
         // 3. 保存key值
         int key = a[low];
 
         //4，完成一趟排序
-        while( i < j) {
+        while (i < j) {
             //4.1 ，从右往左找到第一个小于key的数
-            while (i<j && a[j] >=key) {
+            while (i < j && a[j] >= key) {
                 j--;
             }
             // 4.2 从左往右找到第一个大于key的数
-            while (i<j && a[i]<=key){
+            while (i < j && a[i] <= key) {
                 i++;
             }
 
             //4.3 交换
-            if (i<j) {
+            if (i < j) {
                 int temp = a[i];
                 a[i] = a[j];
-                a[j]  = temp;
+                a[j] = temp;
             }
         }
 
@@ -55,8 +55,8 @@ public class QuickSortSimple {
         a[low] = temp;
 
         //5, 对key左边的数快排
-        sort(a, low, i-1);
+        sort(a, low, i - 1);
         //5, 对key左边的数快排
-        sort(a, i+1, high);
+        sort(a, i + 1, high);
     }
 }
