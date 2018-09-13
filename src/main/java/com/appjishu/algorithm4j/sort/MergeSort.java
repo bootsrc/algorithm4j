@@ -33,7 +33,8 @@ public class MergeSort {
         int j = mid + 1;//右序列指针
         int t = 0;//临时数组指针
         while (i <= mid && j <= right) {
-            if (arr[i] <= arr[j]) {
+            if (arr[i] <= arr[j]) {     // 这里判断条件带上arr[i]==arr[j]是为了保证排序的稳定性（关键字相等的情况下，原来
+                // 在左边的元素，排序后仍然在左边
                 temp[t++] = arr[i++];
             } else {
                 temp[t++] = arr[j++];
